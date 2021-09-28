@@ -1,5 +1,5 @@
 ---
-title: 论文研读：Problems of Developing Parallel S of Complex Architecture Based on GPGPU Techno Hybrid Fluid-Based Model of Internet Traffic in Computer Networklogy and their Solutions.md
+title: 论文研读：Problems of Developing Parallel S of Complex Architecture Based on GPGPU Techno Hybrid Fluid-Based Model of Internet Traffic in Computer Networklogy and their Solutions
 ---
 
 > 作业内容：
