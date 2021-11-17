@@ -16,15 +16,6 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     <i class="fab fa-zhihu"></i>
   </a>
   <br/>
-  <iframe
-    src="//music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"
-    frameborder="no"
-    border="0"
-    marginwidth="0"
-    marginheight="0"
-    width="100%"
-    height=52
-  ></iframe>
 url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
@@ -385,7 +376,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               | # 对KaTeX过长公式渲染超出页面的修正，感谢[@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/13)
               <link
                 rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css"
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
               />
               <style>
                 .katex-display>.katex {
@@ -393,7 +384,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
               </style>
               <script
-                src="https://cdn.jsdelivr.net/combine/npm/katex@0.13.18/dist/katex.min.js,npm/katex@0.13.18/dist/contrib/auto-render.min.js"
+                src="https://cdn.jsdelivr.net/combine/npm/katex@0.15.1/dist/katex.min.js,npm/katex@0.15.1/dist/contrib/auto-render.min.js"
                 async="async"
                 onload='renderMathInElement(document.body, { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
               ></script>
@@ -414,7 +405,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
               </style>
               <script
-                src="https://cdn.jsdelivr.net/npm/mermaid@8.12.1/dist/mermaid.min.js"
+                src="https://cdn.jsdelivr.net/npm/mermaid@8.13.3/dist/mermaid.min.js"
                 async="async"
                 onload='
                   for(let x of document.getElementsByClassName("language-mermaid"))
@@ -449,12 +440,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             append: |
               <link
                 rel="stylesheet"
-                href="https://cdn.jsdelivr.net/combine/npm/prismjs@1.24.1/plugins/line-numbers/prism-line-numbers.min.css,npm/prismjs@1.24.1/plugins/toolbar/prism-toolbar.min.css,npm/prismjs@1.24.1/plugins/match-braces/prism-match-braces.min.css,npm/prism-themes@1.8.0/themes/prism-nord.min.css"
+                href="https://cdn.jsdelivr.net/combine/npm/prismjs@1.25.0/plugins/line-numbers/prism-line-numbers.min.css,npm/prismjs@1.25.0/plugins/toolbar/prism-toolbar.min.css,npm/prismjs@1.25.0/plugins/match-braces/prism-match-braces.min.css,npm/prism-themes@1.8.0/themes/prism-nord.min.css"
               />
               <script
-                src="https://cdn.jsdelivr.net/combine/npm/prismjs@1.24.1/components/prism-core.min.js,npm/prismjs@1.24.1/plugins/autoloader/prism-autoloader.min.js,npm/prismjs@1.24.1/plugins/line-numbers/prism-line-numbers.min.js,npm/prismjs@1.24.1/plugins/toolbar/prism-toolbar.min.js,npm/prismjs@1.24.1/plugins/match-braces/prism-match-braces.min.js"
+                src="https://cdn.jsdelivr.net/combine/npm/prismjs@1.25.0/components/prism-core.min.js,npm/prismjs@1.25.0/plugins/autoloader/prism-autoloader.min.js,npm/prismjs@1.25.0/plugins/line-numbers/prism-line-numbers.min.js,npm/prismjs@1.25.0/plugins/toolbar/prism-toolbar.min.js,npm/prismjs@1.25.0/plugins/match-braces/prism-match-braces.min.js"
                 async="async"
-                data-autoloader-path="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/components/"
+                data-autoloader-path="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/"
                 onload='
                   for(let x of document.getElementsByClassName("content"))
                     x.classList.add("line-numbers","match-braces");
@@ -680,7 +671,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
           prepend: |
             <link
               rel="stylesheet"
-              href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.1.3/dist/reveal.min.css,npm/reveal.js@4.1.3/dist/theme/serif.min.css"
+              href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.2.0/dist/reveal.min.css,npm/reveal.js@4.2.0/dist/theme/serif.min.css"
             />
             <style>
               .sidebar {
@@ -696,7 +687,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
           append: |
             <script
               async="async"
-              src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.1.3/dist/reveal.min.js,npm/reveal.js@4.1.3/plugin/markdown/markdown.min.js,npm/reveal.js@4.1.3/plugin/math/math.min.js,npm/reveal.js@4.1.3/plugin/highlight/highlight.min.js"
+              src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.2.0/dist/reveal.min.js,npm/reveal.js@4.2.0/plugin/markdown/markdown.min.js,npm/reveal.js@4.2.0/plugin/math/math.min.js,npm/reveal.js@4.2.0/plugin/highlight/highlight.min.js"
               onload="
               for(let x of document.getElementsByClassName('wrap'))
                 x.classList.add('reveal');
