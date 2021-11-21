@@ -14,8 +14,6 @@ presentation: # https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/pr
   .reveal .slides { text-align: left; }
 </style>
 
-<!-- .slide -->
-
 **GPS: A Global Publish Subscribe Model for Multi-GPU Memory Management**
 
 - [MICRO'21](https://www.microarch.org/micro54/) Best Paper Nominee

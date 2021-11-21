@@ -61,6 +61,7 @@ School of Computer Science and Engineering, Sun Yat-sen University, Guangzhou
 
 ## Honors
 
+- **Second Prize (3rd)**, [China Parallel Application Challenge on Demostic CPU](http://hpc-cpc.com/index.php?s=/index/index/name/index), Oct. 2021
 - **CCF Elite Collegiate Award (94 undergrads in China)**, [China Computer Federation (CCF)](https://www.ccf.org.cn/Awards/Awards/2021-09-06/736189.shtml), Sept. 2021
 - **Outstanding Undergraduate Thesis**, May. 2021
 - **First Prize (3rd) & Highest Linpack**, [ASC20-21 Student Supercomputer Challenge](https://wu-kan.cn/2021/05/19/%E6%88%91%E7%9A%84ASC%E5%86%B3%E8%B5%9B%E5%A4%8D%E7%9B%98-%E5%86%92%E9%99%A9-%E5%A4%B1%E8%AF%AF%E4%B8%8E%E7%BF%BB%E8%BD%A6/), May. 2021
