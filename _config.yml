@@ -1,6 +1,5 @@
 title: wu-kan # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  <center>
   SYSU第5年<br/>
   水野爱<br/>
   田宫例四驱车<br/>
@@ -17,7 +16,6 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     <i class="fab fa-zhihu"></i>
   </a>
   <br/>
-  </center>
 url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
@@ -29,7 +27,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
         default:
           body:
             theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
-            layout-reverse: false # 开启后sidebar在右边，反之左边
+            layout-reverse: true # 开启后sidebar在右边，反之左边
             sidebar-overlay: true # 开启后正文不随sidebar移动而移动
           append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
             - | #一些页面优化标签，看不懂可跳过
@@ -111,12 +109,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   margin-bottom: 1rem;
                 }
               </style>
-            - | # 防止标题被 sidebar-toggle 遮挡
-              <style>
-                .page-title {
-                  z-index: 9;    
-                }
-              </style>
             - | # 表格样式美化
               <style>
                 td,
@@ -145,7 +137,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   margin: 0;
                 }
               </style>
-            - | # 彩虹滚动条，仅对Chrome系浏览器生效
+            - | # 自定义滚动条，仅对Chrome系浏览器生效
               <style>
                 ::-webkit-scrollbar {
                   width: 3px;
@@ -160,7 +152,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 @media only screen {
                   pre {
                     max-height: 66.6vh;
-                    padding: 0;
+                    padding: 0 1rem;
                     overflow: hidden hidden;
                   }
                   pre:hover {
@@ -468,47 +460,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       x.parentNode.insertAdjacentElement("beforebegin", m);
                       vegaEmbed(m, JSON.parse(x.textContent));
                     }'
-              ></script>
-          prism: # 代码高亮插件
-            enable: false
-            append: |
-              <style>
-                @media only screen {
-                  pre {
-                    max-height: 66.6vh;
-                    overflow: auto;
-                  }
-                }
-              </style>
-              <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/combine/npm/prismjs@1.25.0/plugins/line-numbers/prism-line-numbers.min.css,npm/prismjs@1.25.0/plugins/toolbar/prism-toolbar.min.css,npm/prismjs@1.25.0/plugins/match-braces/prism-match-braces.min.css,npm/prism-themes@1.9.0/themes/prism-nord.min.css"
-              />
-              <script
-                src="https://cdn.jsdelivr.net/combine/npm/prismjs@1.25.0/components/prism-core.min.js,npm/prismjs@1.25.0/plugins/autoloader/prism-autoloader.min.js,npm/prismjs@1.25.0/plugins/line-numbers/prism-line-numbers.min.js,npm/prismjs@1.25.0/plugins/toolbar/prism-toolbar.min.js,npm/prismjs@1.25.0/plugins/match-braces/prism-match-braces.min.js"
-                async="async"
-                data-autoloader-path="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/"
-                onload='
-                  for(let x of document.getElementsByClassName("content"))
-                    x.classList.add("line-numbers","match-braces");
-                  Prism.plugins.toolbar.registerButton("select-code", function (env) {
-                    let button = document.createElement("button");
-                    button.textContent = "select this " + env.language;
-                    button.addEventListener("click", function () {
-                      if (document.body.createTextRange) {
-                        let range = document.body.createTextRange();
-                        range.moveToElementText(env.element);
-                        range.select();
-                      } else if (window.getSelection) {
-                        let selection = window.getSelection();
-                        let range = document.createRange();
-                        range.selectNodeContents(env.element);
-                        selection.removeAllRanges();
-                          selection.addRange(range);
-                      }
-                    });
-                    return button;
-                  })'
               ></script>
           prepend:
             - | # 增加宽屏下的显示内容
