@@ -111,6 +111,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   margin-bottom: 1rem;
                 }
               </style>
+            - | # 防止标题被 sidebar-toggle 遮挡
+              <style>
+                .page-title {
+                  z-index: 9;    
+                }
+              </style>
             - | # 表格样式美化
               <style>
                 td,
@@ -235,7 +241,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     max-height: 66.6vh;
                   }
                   #toc:hover{
-                    overflow-y: auto;
+                    overflow: auto auto;
                   }
                 </style>
             append_to_sidebar:
@@ -247,6 +253,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                   .sidebar-toggle {
                     position: fixed;
+                    background: none;
                   }
                 </style>
               - | # 修复侧边栏特定情况下抖动的问题，感谢 [@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/11)
@@ -422,9 +429,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
                 @media only screen {
                   .mermaid {
-                    overflow: auto auto;
+                    overflow: hidden hidden;
                     max-width: 100%;
                     max-height: 66.6vh;
+                  }
+                  .mermaid {
+                    overflow: auto auto;
                   }
                 }
               </style>
